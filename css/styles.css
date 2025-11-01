@@ -679,7 +679,6 @@ img {
 .checkbox-label {
     display: block;
     align-items: center;
-    gap: 8px;
     cursor: pointer;
     font-size: 12px;
     line-height: 1.17;
@@ -706,6 +705,7 @@ img {
     width: 10px;
     height: 8px;
     fill: currentColor;
+    stroke: currentColor;
     opacity: 0;
     transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
@@ -723,6 +723,7 @@ img {
     fill: transparent;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
+    margin-right: 8px;
     width: 16px;
     height: 16px;
     align-items: center;
@@ -808,8 +809,11 @@ img {
 .footer-box {
     display: flex;
     align-items: flex-start;
-    gap: 40px;
     margin: 0 auto;
+}
+
+.container-items {
+    margin-right: 0 auto;
 }
 
 .footer-container {
@@ -891,6 +895,7 @@ img {
 .subscribe-container {
     display: flex;
     flex-direction: column;
+    margin-right: 0 auto;
 
 }
 
@@ -967,3 +972,18 @@ img {
 
 
 
+/* #region - Adaptive - Start  */
+
+/* #region - Mobile - Start */
+
+/* #endregion - Mobile - Completed */
+
+
+/* #region - Tablet - Start */
+
+
+
+/* #endregion - Tablet - Completed */
+
+
+/* #endregion - Adaptive - Completed */
