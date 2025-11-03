@@ -11,6 +11,15 @@ img {
     max-width: 100%;
     height: auto;
 } 
+
+.mobile-menu,
+.burger {
+    display: none;
+}
+
+
+           /* ------- COMPUTER -------  */
+
 /* #region Header - Start */
 
 
@@ -133,15 +142,16 @@ img {
     margin: 0 auto;
     padding: 188px 0;
     text-align: center;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)),
-    url('../images/fon-back/people-office.jpg');
+    background-image:
+        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url('../images/fon-back/people-office.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-color: #2e2f42;
     z-index: 0;
-    overflow: hidden; }
+    overflow: hidden;
+}
 
 .container-your-business::before {
     content: "";
@@ -154,13 +164,13 @@ img {
     z-index: -1;
 }
 
-
 .container-business {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
 }
+
 .business-solution {
     text-align: center;
     font-size: 56px;
@@ -172,8 +182,7 @@ img {
     font-weight: 700;
 }
 
-/* #region - button - Start */
-
+/* кнопка */
 .btn {
     display: block;
     background-color: #4D5AE5;
@@ -189,14 +198,12 @@ img {
     border: none;
     padding: 16px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* добавлено */
 }
 
 .btn:hover,
 .btn:focus {
     background-color: #404BBF;
 }
-
 
 
 /* #endregion - button - End */
@@ -222,6 +229,10 @@ img {
     margin: -1px;
 }
 
+.feature-menu {
+    display: flex;
+    gap: 24px;
+}
 
 .menu-list {
     background-color: #FFFFFF;
@@ -231,50 +242,32 @@ img {
     width: calc((100% - 72px) / 4);
 }
 
-.feature-menu {
+.icon-container {
     display: flex;
-    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    margin-bottom: 8px;
 }
 
- .feature-title {
+.feature-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
- }
-
-  .feature-text {
-      font-size: 16px;
-      line-height: 1.5;
-      letter-spacing: 0.02em;
-      color: #434455;
-  }
-
-.our-team-list {
-    list-style: none;
 }
 
-
-
- .team-card {
-     background-color: #FFFFFF;
- }
-
-
-
- .icon-container {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     height: 112px;
-     background-color: #f4f4fd;
-     border-radius: 4px;
-     border: 1px solid #8e8f99;
-     margin-bottom: 8px;
- }
-
+.feature-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
 /* #endregion Section 2 - Completed */
 
 
@@ -977,16 +970,84 @@ img {
 
 
 
+                 /* ------ ADAPTIVE ------ */
+
+
 /* #region - Adaptive - Start  */
 
 /* #region - Mobile - Start */
 
+
+/* #region - Header - Start */
+
+/* #region - (max-width : 320px) - Start */
+
+/* #endregion - ( max-width : 320px ) - Completed */
+/* #region - (width - 480px) - Start */
+
+/* #endregion - (width - 480px) - Completed */
+/* #region - (width - 768px) - Start */
+/* #endregion - (width - 768px) - Completed */
+
+/* #endregion - Header ( max-width : 320px ) - Completed */
+
+
+/* #region - Main - Start  */
+
+
+
+/* #region - (width - 320px) - Start */
+
+
+/* #endregion - (width - 320px) - Completed */
+
+/* #region - (width - 480px) - Start */
+
+
+/* #endregion - (width - 480px) - Completed */
+
+/* #region - (width - 768px) - Start */
+
+
+
+/* #endregion - (width - 768px) - Completed */
+
+/* #endregion - Main - End */
+
+/* #region - Footer - Start */
+/* #region - (width - 320px) - Start */
+
+
+/* #endregion - (width - 320px) - Completed */
+
+/* #region - (width - 480px) - Start */
+
+
+/* #endregion - (width - 480px) - Completed */
+
+/* #region - (width - 768px) - Start */
+/* #endregion - (width - 768px) - Completed */
+
 /* #endregion - Mobile - Completed */
 
+/* #endregion - Mobile - Completed */
 
 /* #region - Tablet - Start */
 
+/* #region - Header - Start */
+/* #region - (max-width:780px) - Start */
+/* #endregion - (max-width:780px) - Completed */
 
+
+
+/* #region - Main - Start */
+/* #region - (max-width:780px) - Start */
+/* #endregion - (max-width:780px) - Completed */
+
+/* #endregion - Main - Completed */
+
+
+/* #endregion - Tablet - Completed */
 
 /* #endregion - Tablet - Completed */
 
