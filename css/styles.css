@@ -994,13 +994,24 @@ img {
         justify-content: space-between;
     }
  
+    .nav.open .menu {
+    display: block;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    background-color: #FFF;
+    z-index: 1;
+    }
+
+    .container-menu {
+        display: block;
+    }
    }
 /* #endregion - ( max-width : 320px ) - Completed */
-/* #region - (width - 480px) - Start */
 
-/* #endregion - (width - 480px) - Completed */
-/* #region - (width - 768px) - Start */
-/* #endregion - (width - 768px) - Completed */
 
 /* #endregion - Header ( max-width : 320px ) - Completed */
 
@@ -1105,22 +1116,17 @@ img {
         text-align: center;
         margin-left:16px;
     }
+
+    .subscribe-button {
+        width: 165px;
+        margin-left: 56px;
+    }
+
 }
 
 /* #endregion - Footer -Completed */
 
 /* #endregion - (width - 320px) - Completed */
-
-/* #region - (width - 480px) - Start */
-
-
-/* #endregion - (width - 480px) - Completed */
-
-/* #region - (width - 768px) - Start */
-
-
-
-/* #endregion - (width - 768px) - Completed */
 
 /* #endregion - Main - End */
 
@@ -1145,14 +1151,78 @@ img {
 /* #region - Tablet - Start */
 
 /* #region - Header - Start */
-/* #region - (max-width:780px) - Start */
-/* #endregion - (max-width:780px) - Completed */
+/* #region - (max-width:768px) - Start */
 
+@media (max-width: 768px) {
+
+    /* Делаем контейнер flex — внутри будет навигация и адрес */
+    .container-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 72px;
+        padding: 0 16px;
+        gap: 20px;
+    }
+
+    /* Навигация (лого + меню + кнопка) — в одну линию */
+    .webstudio {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Меню навигации — в строку */
+    .webstudio .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    /* Кнопку можно скрыть, если она не нужна */
+    .nav-button {
+        display: none;
+    }
+
+    /* Адрес — в той же строке, но номера идут в столбик */
+    .site-address {
+        display: flex;
+        flex-direction: column;
+        /* два номера один под другим */
+        justify-content: center;
+        align-items: flex-end;
+        /* выравнивание по правому краю */
+    }
+
+    .site-address .menu {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        gap: 2px;
+    }
+
+    .contact-link {
+        display: block;
+        font-size: 13px;
+        line-height: 1.1;
+    }
+}
+
+
+/* #endregion - (max-width:768px) - Completed */
+
+    
 
 
 /* #region - Main - Start */
-/* #region - (max-width:780px) - Start */
-/* #endregion - (max-width:780px) - Completed */
+/* #region - (max-width:768px) - Start */
+/* #endregion - (max-width:768px) - Completed */
 
 /* #endregion - Main - Completed */
 
@@ -1163,3 +1233,4 @@ img {
 
 
 /* #endregion - Adaptive - Completed */
+
