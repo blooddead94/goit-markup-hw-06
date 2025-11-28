@@ -986,12 +986,20 @@ img {
 
 /* #region - (max-width : 320px) - Start */
 @media screen and (max-width: 320px) {
+    .container {
+        max-width: 320px;
+        padding: 0 16px;
+        margin: 0 auto;
+    }
+    
     .menu {
         display: none;
     }
+    
     .nav-button {
         display: flex;
         justify-content: space-between;
+        
     }
  
     .nav.open .menu {
@@ -1024,9 +1032,6 @@ img {
  
    /* #region - container-characteristics - Start */
  @media screen and (max-width: 320px) {
-   .container {
-       width: 100%;
-   }
 
    .feature-menu {
        flex-direction: column;
