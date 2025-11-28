@@ -991,33 +991,28 @@ img {
         padding: 0 16px;
         margin: 0 auto;
     }
-    
-    .menu {
-        display: none;
+
+    .logo {
+        padding: 16px 0;
+        display: block;
     }
-    
+
+    .header-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu , .site-address    {
+        display: none;
+    }   
+
     .nav-button {
         display: flex;
         justify-content: space-between;
-        
+        align-items: center;
     }
- 
-    .nav.open .menu {
-    display: block;
-    position: fixed;
-    top:0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+}   
 
-    background-color: #FFF;
-    z-index: 1;
-    }
-
-    .container-menu {
-        display: block;
-    }
-   }
 /* #endregion - ( max-width : 320px ) - Completed */
 
 
@@ -1026,9 +1021,18 @@ img {
 
 /* #region - Main - Start  */
 
+@media screen and (max-width:320px) { 
+    .container-your-business {
+        max-width: 320px;
+    }
+}
 
 
 /* #region - (width - 320px) - Start */
+
+
+
+
  
    /* #region - container-characteristics - Start */
  @media screen and (max-width: 320px) {
@@ -1054,19 +1058,44 @@ img {
    /* #endregion - container-characteristics - Completed */
 
 
- 
+ /* #region - Our Team - Start */
+@media screen and (max-width:320px) {
+    .our-team {
+        max-width: 320px;
+    }
+
+    .section-title {
+        width: 320px;
+        
+    }
+
+    .our-team-list {
+        width: 264px;
+        padding: 0 28px;
+    }
+}
+ /* #endregion - Our Team - Completed */
 
 
 /* #region - Our-portfolio - Start */
 
 @media screen and (max-width:320px) {
+
+    .portfolio-heading {
+        max-width: 320px;
+    }
+
+    .portfolio-list {
+        max-width: 320px;
+    }
+
     .portfolio-img {
-        width: 100%;
-        height: 100%;
+        width: 288px;
+       
     }
 
   .portfolio-img-wrapper {
-    width: 100%;
+    width: 100%;    
   }
   
   .container-cards {
@@ -1158,65 +1187,19 @@ img {
 /* #region - Header - Start */
 /* #region - (max-width:768px) - Start */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+ 
+    .container {
+        max-width: 768px ;
 
-    /* Делаем контейнер flex — внутри будет навигация и адрес */
-    .container-menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 72px;
-        padding: 0 16px;
-        gap: 20px;
+    }
+    
+    .header-menu {
+        border-bottom: 1px solid #e7e9fc;
+        box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 0, 0.16), 0 2px 2px 0 rgba(46, 47, 66, 0.1);
     }
 
-    /* Навигация (лого + меню + кнопка) — в одну линию */
-    .webstudio {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-    }
 
-    /* Меню навигации — в строку */
-    .webstudio .menu {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 16px;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-
-    /* Кнопку можно скрыть, если она не нужна */
-    .nav-button {
-        display: none;
-    }
-
-    /* Адрес — в той же строке, но номера идут в столбик */
-    .site-address {
-        display: flex;
-        flex-direction: column;
-        /* два номера один под другим */
-        justify-content: center;
-        align-items: flex-end;
-        /* выравнивание по правому краю */
-    }
-
-    .site-address .menu {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        gap: 2px;
-    }
-
-    .contact-link {
-        display: block;
-        font-size: 13px;
-        line-height: 1.1;
-    }
 }
 
 
@@ -1234,7 +1217,74 @@ img {
 
 /* #endregion - Tablet - Completed */
 
-/* #endregion - Tablet - Completed */
+
+/* #region - Main - Start */
+
+/* #region - Container - characteristic - Start  */
+
+
+@media screen and (max-width:768px) {
+    
+    .portfolio-list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .icon-container {
+        display: none;
+    }
+
+.container-characteristics .feature-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.container-characteristics .feature-menu .feature {
+    flex: 0 0 calc(50% - 12px);
+    box-sizing: border-box;
+}
+
+.feature-title {
+    font-size: 36px;
+}
+
+.feature-text {
+    font-size: 16px;
+}
+}
+
+
+/* #endregion - Container - characteristic - Completed */
+
+/* #region - our-portfolio - Start  */
+
+@media screen and (max-width:768px) {
+.our-portfolio .portfolio-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .our-portfolio .portfolio-item {
+        display: block;
+        flex: 0 0 calc(50% - 12px);
+        box-sizing: border-box;
+    }
+}
+
+
+/* #endregion - our-portfolio - Completed */
+
+
+/* #endregion - Main - Completed */
 
 
 /* #endregion - Adaptive - Completed */
