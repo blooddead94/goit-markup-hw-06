@@ -1021,11 +1021,7 @@ img {
 
 /* #region - Main - Start  */
 
-@media screen and (max-width:320px) { 
-    .container-your-business {
-        max-width: 320px;
-    }
-}
+
 
 
 /* #region - (width - 320px) - Start */
@@ -1119,20 +1115,16 @@ img {
 
     .footer-container {
         text-align: center;
-        margin: 0 0 72px 16px;
+        margin: 0;
     }
 
     .footer-text {
         text-align: left;
     }
     .footer-info {
-        height: 644px;
+        height: auto;
     }
-    .footer-box {
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding-bottom: 72px;
-    }
+    
 
     .subscribe-form {
         width: 100%;
@@ -1168,19 +1160,25 @@ img {
 /* #region - (width - 320px) - Start */
 
 
+
+
 /* #endregion - (width - 320px) - Completed */
 
-/* #region - (width - 480px) - Start */
 
-
-/* #endregion - (width - 480px) - Completed */
 
 /* #region - (width - 768px) - Start */
 /* #endregion - (width - 768px) - Completed */
 
 /* #endregion - Mobile - Completed */
 
-/* #endregion - Mobile - Completed */
+
+
+
+
+
+
+
+
 
 /* #region - Tablet - Start */
 
