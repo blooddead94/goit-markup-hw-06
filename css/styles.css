@@ -1199,7 +1199,24 @@ img {
         box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 0, 0.16), 0 2px 2px 0 rgba(46, 47, 66, 0.1);
     }
 
+    .menu {
+       font-size: 12px;
+    }
 
+        .site-address .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            /* можешь изменить */
+        }
+    
+        .site-address .menu li {
+            display: block;
+        }
+    
+        .contact-link {
+            padding: 0 16px 0 0;
+        }
 }
 
 
@@ -1263,20 +1280,52 @@ img {
 
 /* #region - our-portfolio - Start  */
 
-@media screen and (max-width:768px) {
-.our-portfolio .portfolio-list {
-        display: flex;
-        flex-wrap: wrap;
+@media screen and (max-width: 768px) {
+    .our-portfolio .portfolio-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 24px;
         padding: 0;
         margin: 0;
         list-style: none;
+        box-sizing: border-box;
     }
 
     .our-portfolio .portfolio-item {
-        display: block;
-        flex: 0 0 calc(50% - 12px);
+        width: 100%;
+        min-width: 0;
         box-sizing: border-box;
+        display: block;
+    }
+
+    .our-portfolio .portfolio-item,
+    .our-portfolio .portfolio-item * {
+        min-width: 0;
+    }
+
+    .our-portfolio .portfolio-item .portfolio-img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    .our-portfolio .portfolio-item .container-cards {
+        width: 100%;
+        box-sizing: border-box;
+        min-width: 0;
+    }
+
+    .our-portfolio .portfolio-img-wrapper {
+        position: relative;
+        overflow: hidden;
+        min-width: 0;
+    }
+
+    .our-portfolio .portfolio-overlay {
+        word-break: break-word;
+        hyphens: auto;
     }
 }
 
@@ -1285,6 +1334,27 @@ img {
 
 
 /* #endregion - Main - Completed */
+
+/* #region - Footer - Start */
+@media screen and (max-width:768px) {
+   .footer-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} 
+
+.subscribe-container {
+    margin-top: 72px;
+    margin-left: 145px;
+}
+
+.footer-container {
+    margin-left: auto;
+}
+}
+
+
+/* #endregion - Footer - Completed */
 
 
 /* #endregion - Adaptive - Completed */
