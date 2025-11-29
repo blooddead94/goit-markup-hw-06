@@ -977,9 +977,179 @@ img {
                  /* ------ ADAPTIVE ------ */
 
 
-/* #region - Adaptive - Start  */
+/* #region - Tablet - Start */
 
-/* #region - Mobile - Start */
+/* #region - Header - Start */
+/* #region - (max-width:768px) - Start */
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        max-width: 768px;
+
+    }
+
+    .header-menu {
+        border-bottom: 1px solid #e7e9fc;
+        box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 0, 0.16), 0 2px 2px 0 rgba(46, 47, 66, 0.1);
+    }
+
+    .menu {
+        font-size: 12px;
+    }
+
+    .site-address .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        /* можешь изменить */
+    }
+
+    .site-address .menu li {
+        display: block;
+    }
+
+    .contact-link {
+        padding: 0 16px 0 0;
+    }
+}
+
+
+/* #endregion - (max-width:768px) - Completed */
+
+
+
+/* #endregion - Tablet - Completed */
+
+
+/* #region - Main - Start */
+
+/* #region - Container - characteristic - Start  */
+
+
+@media screen and (max-width:768px) {
+
+    .portfolio-list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .icon-container {
+        display: none;
+    }
+
+    .container-characteristics .feature-menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .container-characteristics .feature-menu .feature {
+        flex: 0 0 calc(50% - 12px);
+        box-sizing: border-box;
+    }
+
+    .feature-title {
+        font-size: 36px;
+    }
+
+    .feature-text {
+        font-size: 16px;
+    }
+}
+
+
+/* #endregion - Container - characteristic - Completed */
+
+/* #region - our-portfolio - Start  */
+
+@media screen and (max-width: 768px) {
+    .our-portfolio .portfolio-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        box-sizing: border-box;
+    }
+
+    .our-portfolio .portfolio-item {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        display: block;
+    }
+
+    .our-portfolio .portfolio-item,
+    .our-portfolio .portfolio-item * {
+        min-width: 0;
+    }
+
+    .our-portfolio .portfolio-item .portfolio-img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    .our-portfolio .portfolio-item .container-cards {
+        width: 100%;
+        box-sizing: border-box;
+        min-width: 0;
+    }
+
+    .our-portfolio .portfolio-img-wrapper {
+        position: relative;
+        overflow: hidden;
+        min-width: 0;
+    }
+
+    .our-portfolio .portfolio-overlay {
+        word-break: break-word;
+        hyphens: auto;
+    }
+}
+
+
+/* #endregion - our-portfolio - Completed */
+
+
+/* #endregion - Main - Completed */
+
+/* #region - Footer - Start */
+@media screen and (max-width:768px) {
+    .footer-box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .subscribe-container {
+        margin-top: 72px;
+        margin-left: 145px;
+    }
+
+    .footer-container {
+        margin-left: auto;
+    }
+}
+
+
+/* #endregion - Footer - Completed */
+
+
+/* #endregion - Adaptive - Completed */
+
+
+
+
+
 
 
 /* #region - Header - Start */
@@ -1019,17 +1189,7 @@ img {
 /* #endregion - Header ( max-width : 320px ) - Completed */
 
 
-/* #region - Main - Start  */
 
-
-
-
-/* #region - (width - 320px) - Start */
-
-
-
-
- 
    /* #region - container-characteristics - Start */
  @media screen and (max-width: 320px) {
 
@@ -1113,6 +1273,11 @@ img {
 
 @media  screen and (max-width:320px) {
 
+
+    div.container.footer-box {
+        max-width: 320px;
+    }
+
     .footer-container {
         text-align: center;
         margin: 0;
@@ -1135,12 +1300,12 @@ img {
     .container-items {
         width: 208px;
         height: 80px;
-       margin:0 0 72px 56px;
+       margin: 72px 0 0 56px;
         text-align: center;
     }
     .subscribe-container {
         text-align: center;
-        margin-left:16px;
+        margin-left:0;
     }
 
     .subscribe-button {
@@ -1152,208 +1317,7 @@ img {
 
 /* #endregion - Footer -Completed */
 
-/* #endregion - (width - 320px) - Completed */
 
-/* #endregion - Main - End */
 
-/* #region - Footer - Start */
-/* #region - (width - 320px) - Start */
 
-
-
-
-/* #endregion - (width - 320px) - Completed */
-
-
-
-/* #region - (width - 768px) - Start */
-/* #endregion - (width - 768px) - Completed */
-
-/* #endregion - Mobile - Completed */
-
-
-
-
-
-
-
-
-
-
-/* #region - Tablet - Start */
-
-/* #region - Header - Start */
-/* #region - (max-width:768px) - Start */
-
-@media screen and (max-width: 768px) {
- 
-    .container {
-        max-width: 768px ;
-
-    }
-    
-    .header-menu {
-        border-bottom: 1px solid #e7e9fc;
-        box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 0, 0.16), 0 2px 2px 0 rgba(46, 47, 66, 0.1);
-    }
-
-    .menu {
-       font-size: 12px;
-    }
-
-        .site-address .menu {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            /* можешь изменить */
-        }
-    
-        .site-address .menu li {
-            display: block;
-        }
-    
-        .contact-link {
-            padding: 0 16px 0 0;
-        }
-}
-
-
-/* #endregion - (max-width:768px) - Completed */
-
-    
-
-
-/* #region - Main - Start */
-/* #region - (max-width:768px) - Start */
-/* #endregion - (max-width:768px) - Completed */
-
-/* #endregion - Main - Completed */
-
-
-/* #endregion - Tablet - Completed */
-
-
-/* #region - Main - Start */
-
-/* #region - Container - characteristic - Start  */
-
-
-@media screen and (max-width:768px) {
-    
-    .portfolio-list {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    .icon-container {
-        display: none;
-    }
-
-.container-characteristics .feature-menu {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.container-characteristics .feature-menu .feature {
-    flex: 0 0 calc(50% - 12px);
-    box-sizing: border-box;
-}
-
-.feature-title {
-    font-size: 36px;
-}
-
-.feature-text {
-    font-size: 16px;
-}
-}
-
-
-/* #endregion - Container - characteristic - Completed */
-
-/* #region - our-portfolio - Start  */
-
-@media screen and (max-width: 768px) {
-    .our-portfolio .portfolio-list {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        box-sizing: border-box;
-    }
-
-    .our-portfolio .portfolio-item {
-        width: 100%;
-        min-width: 0;
-        box-sizing: border-box;
-        display: block;
-    }
-
-    .our-portfolio .portfolio-item,
-    .our-portfolio .portfolio-item * {
-        min-width: 0;
-    }
-
-    .our-portfolio .portfolio-item .portfolio-img {
-        display: block;
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-        object-fit: cover;
-    }
-
-    .our-portfolio .portfolio-item .container-cards {
-        width: 100%;
-        box-sizing: border-box;
-        min-width: 0;
-    }
-
-    .our-portfolio .portfolio-img-wrapper {
-        position: relative;
-        overflow: hidden;
-        min-width: 0;
-    }
-
-    .our-portfolio .portfolio-overlay {
-        word-break: break-word;
-        hyphens: auto;
-    }
-}
-
-
-/* #endregion - our-portfolio - Completed */
-
-
-/* #endregion - Main - Completed */
-
-/* #region - Footer - Start */
-@media screen and (max-width:768px) {
-   .footer-box {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-} 
-
-.subscribe-container {
-    margin-top: 72px;
-    margin-left: 145px;
-}
-
-.footer-container {
-    margin-left: auto;
-}
-}
-
-
-/* #endregion - Footer - Completed */
-
-
-/* #endregion - Adaptive - Completed */
 
