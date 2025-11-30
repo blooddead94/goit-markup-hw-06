@@ -984,12 +984,15 @@ img {
 
 @media screen and (max-width: 768px) {
 
+
+
     .container {
         max-width: 768px;
 
     }
 
     .header-menu {
+        width: 768px;
         border-bottom: 1px solid #e7e9fc;
         box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 0, 0.16), 0 2px 2px 0 rgba(46, 47, 66, 0.1);
     }
@@ -1024,11 +1027,24 @@ img {
 
 /* #region - Main - Start */
 
+/* #region - container-your-business - Start */
+@media screen and (max-width:768px) {
+
+    .container-your-business {
+        width: 768px;
+    }
+    
+}
+
+/* #endregion - container-your-business - Completed */
+
 /* #region - Container - characteristic - Start  */
 
 
 @media screen and (max-width:768px) {
-
+    .container-characteristics {
+        width: 768px;
+    }
     .portfolio-list {
         display: flex;
         flex-direction: column;
@@ -1065,9 +1081,27 @@ img {
 
 /* #endregion - Container - characteristic - Completed */
 
+/* #region - our-team - Start */
+
+@media screen and (max-width:768px) {
+    .our-team {
+        width: 768px;
+    }
+
+    .our-team-list {
+        width: 100%;
+    }
+    
+}
+
+/* #endregion - our-team - Completed */
+
 /* #region - our-portfolio - Start  */
 
 @media screen and (max-width: 768px) {
+    .our-portfolio {
+        width: 768px;
+    }
     .our-portfolio .portfolio-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1124,10 +1158,15 @@ img {
 
 /* #region - Footer - Start */
 @media screen and (max-width:768px) {
+
+    .footer-info {
+        width: 768px;
+    }    
     .footer-box {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        margin: 0;
     }
 
     .subscribe-container {
@@ -1137,6 +1176,10 @@ img {
 
     .footer-container {
         margin-left: auto;
+    }
+
+    .container-items {
+        padding-right:15px;
     }
 }
 
