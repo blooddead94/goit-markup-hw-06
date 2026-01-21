@@ -390,7 +390,7 @@ img {
     padding: 120px 0;
 }
 
-.portfolio-item:first-child {
+.portfolio-item {
     width: calc((100% - 48px) / 3);
 }
 
@@ -819,6 +819,7 @@ img {
 
 
 .footer-container {
+    margin-left: 120px;
     margin-right: 120px;
     width: 264px;
 }
@@ -851,6 +852,8 @@ img {
     color: #F4F4FD;
     max-width: 264px;
 }
+
+
 
 /* Social Media */
 
@@ -1015,9 +1018,6 @@ img {
     width: 261px;
 }
 
-.site-address {
-    width: 119px;
-}
 
 .site-address .menu {
     display: flex;
@@ -1028,13 +1028,22 @@ img {
 .contact-link {
     display: block;
     width: 100%;
+    padding: 0;
 }
 
 
 
 /* #endregion - header - Completed */
 
+/* #region - Our Team - Start */
 
+.section-title {
+    margin: 0 auto;
+    padding-bottom: 72px;
+}   
+
+
+/* #endregion - Our Team - Completed */
  
 /* #region - Container-your-business - Start */
     
@@ -1055,7 +1064,8 @@ img {
 
 .portfolio-heading {
     margin: 0 auto;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
+    width: calc((100% - 24px)/2);
 }
 
 .portfolio-item {
@@ -1089,8 +1099,8 @@ img {
 
 }
 
-.footer-info {
-    padding-left: 97px;
+.subscribe-container {
+    padding-left: 120px;
 }
 
 /* #endregion - Footer - Completed */
