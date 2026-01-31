@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -25,7 +25,6 @@ https://cdn.jsdelivr.net/npm/the-new-css-reset@1.11.3/css/reset.min.css
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-
     <title>Document</title>
   </head>
   <body>
@@ -42,8 +41,7 @@ https://cdn.jsdelivr.net/npm/the-new-css-reset@1.11.3/css/reset.min.css
             <li><a href="#" class="menu-link">Contacts</a></li>
           </ul>
         </nav>
-
-        <address class="site-address">
+        <address class="site-address pad">
           <ul class="menu">
             <li>
               <a
@@ -67,73 +65,10 @@ https://cdn.jsdelivr.net/npm/the-new-css-reset@1.11.3/css/reset.min.css
           </svg>
         </button>
       </div>
-
-      <div class="mobile-menu is-open">
-        <div class="container mobile-menu-centainer">
-          <button class="mobile-menu-close"></button>
-            <nav>
-              <ul class="menu">
-                <li><a href="#" class="menu-link studio">Studio</a></li>
-                <li>
-                  <a href="#" class="menu-link portfolio-link">Portfolio</a>
-                </li>
-                <li><a href="#" class="menu-link">Contacts</a></li>
-              </ul>
-            </nav>
-            <address>
-              <ul>
-                <li>
-                  <a
-                    href="mailto:info@devstudio.com"
-                    target="_blank"
-                    class="contact-link"
-                  >
-                    info@devstudio.com
-                  </a>
-                </li>
-                <li>
-                  <a href="tel:+110001111111">+11 (000) 111-11-11</a>
-                </li>
-              </ul>
-            </address>
-            l class="social-list">
-            <li class="social-item">
-              <a href="#" class="social-link">
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#Instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="#" class="social-link">
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#Twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="#" class="social-link">
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#Facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="#" class="social-link">
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#In"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          
-        </div>
-      </div>
     </header>
-
     <main>
       <section class="container-your-business">
-        <div class="container-business">
+        <div class="container container-business">
           <h1 class="business-solution">
             Effective Solutions for Your Business
           </h1>
@@ -267,6 +202,7 @@ https://cdn.jsdelivr.net/npm/the-new-css-reset@1.11.3/css/reset.min.css
             <!-- Tom Ford -->
             <li class="img-list">
               <img
+                srcset="./images/our-team/tom-ford.jpg"
                 src="./images/our-team/tom-ford.jpg"
                 alt="tom-ford"
                 width="264"
@@ -409,7 +345,6 @@ https://cdn.jsdelivr.net/npm/the-new-css-reset@1.11.3/css/reset.min.css
             <li class="portfolio-item">
               <div class="portfolio-img-wrapper">
                 <img
-                  class="portfolio-img"
                   src="./images/ourproject/banking-app.jpg"
                   alt="Banking App Interface"
                   width="360"
@@ -429,7 +364,6 @@ https://cdn.jsdelivr.net/npm/the-new-css-reset@1.11.3/css/reset.min.css
             <li class="portfolio-item">
               <div class="portfolio-img-wrapper">
                 <img
-                  class="portfolio-img"
                   src="./images/ourproject/cashless-payment.jpg"
                   alt="Cashless Payment"
                   width="360"
@@ -449,7 +383,6 @@ https://cdn.jsdelivr.net/npm/the-new-css-reset@1.11.3/css/reset.min.css
             <li class="portfolio-item">
               <div class="portfolio-img-wrapper">
                 <img
-                  class="portfolio-img"
                   src="./images/ourproject/meditaion-app.jpg"
                   alt="Meditation App"
                   width="360"
@@ -470,7 +403,6 @@ https://cdn.jsdelivr.net/npm/the-new-css-reset@1.11.3/css/reset.min.css
             <li class="portfolio-item">
               <div class="portfolio-img-wrapper">
                 <img
-                  class="portfolio-img"
                   src="./images/ourproject/taxi-service.jpg"
                   alt="Taxi Service"
                   width="360"
@@ -491,7 +423,6 @@ https://cdn.jsdelivr.net/npm/the-new-css-reset@1.11.3/css/reset.min.css
             <li class="portfolio-item">
               <div class="portfolio-img-wrapper">
                 <img
-                  class="portfolio-img"
                   src="./images/ourproject/screen-illustrations.jpg"
                   alt="Screen Illustrations"
                   width="360"
@@ -512,7 +443,6 @@ https://cdn.jsdelivr.net/npm/the-new-css-reset@1.11.3/css/reset.min.css
             <li class="portfolio-item">
               <div class="portfolio-img-wrapper">
                 <img
-                  class="portfolio-img"
                   src="./images/ourproject/online-courses.jpg"
                   alt="Online Courses"
                   width="360"
@@ -535,7 +465,7 @@ https://cdn.jsdelivr.net/npm/the-new-css-reset@1.11.3/css/reset.min.css
     </main>
 
     <footer class="footer-info">
-    <div class="container footer-box">
+      <div class="container footer-box">
         <div class="footer-container">
           <!-- prettier-ignore -->
           <a href="./index.html" class="footer-logo">
@@ -601,7 +531,7 @@ https://cdn.jsdelivr.net/npm/the-new-css-reset@1.11.3/css/reset.min.css
       </div>
     </footer>
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-open" data-modal>
       <div class="modal">
         <button
           type="button"
@@ -695,13 +625,14 @@ https://cdn.jsdelivr.net/npm/the-new-css-reset@1.11.3/css/reset.min.css
             <label for="user-privacy" class="checkbox-label">
               <span class="checkbox-box" aria-hidden="true">
                 <svg class="checkbox-icon" width="10" height="8">
-                  <use href="./images/icons.svg#cross-tick"></use>
+                  <use href="./images/icons.svg#check"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
               <a href="#" class="privacy-link">Privacy Policy</a>
             </label>
           </div>
+
           <button type="submit" class="form-submit-btn">Send</button>
         </form>
       </div>
